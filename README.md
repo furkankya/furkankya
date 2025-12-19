@@ -1,7 +1,19 @@
 <div align="center">
   
+  <!-- Typing -->
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=1000&color=36BCF7&center=true&vCenter=true&width=435&lines=Merhaba,+Ben+Furkan+Kaya;Yazılım+Geliştirici;Sürekli+Öğrenen+Biri" alt="Typing SVG" />
 
+  <!-- İletişim (ÜSTTE) -->
+  <p align="center">
+    <a href="mailto:kaya150047@gmail.com">
+      <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+    </a>
+    <a href="https://www.linkedin.com/in/furkan-kaya-5a985836b/">
+      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+    </a>
+  </p>
+
+  <!-- Profil Görüntüleme -->
   <p align="center">
     <a href="https://github.com/furkankaya">
       <img src="https://komarev.com/ghpvc/?username=furkankaya&label=Profil+Görüntüleme&color=0e75b6&style=flat" alt="furkankaya" />
@@ -36,18 +48,6 @@
   
   <p align="center">
     <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=furkankaya&theme=radical" />
-  </p>
-
-  ---
-
-  <h2 align="center">📫 Benimle İletişime Geç</h2>
-  <p align="center">
-    <a href="mailto:kaya150047@gmail.com">
-      <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-    </a>
-    <a href="https://www.linkedin.com/in/furkan-kaya-5a985836b/">
-      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-    </a>
   </p>
 
 </div>
