@@ -1,22 +1,21 @@
-# Merhaba, Ben Bir Geliştiriciyim! 👋 
+<div align="center">
 
-### 📩 İletişim & Sosyal Medya
-[<img src="https://img.shields.io/badge/Email-kaya150047%40gmail.com-39d353?style=for-the-badge&logo=gmail&logoColor=white" />](mailto:kaya150047@gmail.com)
-[<img src="https://img.shields.io/badge/LinkedIn-Profilim-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />](#)
-[<img src="https://img.shields.io/badge/GitHub-Profilim-181717?style=for-the-badge&logo=github&logoColor=white" />](#)
+# Merhaba, Ben Bir Geliştiriciyim! 👋
 
----
-
-### 🚀 Hakkımda
-Python ve Veri Analizi konularında projeler geliştiriyorum. Özellikle **OpenCV** ile görüntü işleme ve **Selenium** ile otomasyon sistemleri üzerine yoğunlaşıyorum.
-
-- 🔭 Şu anda **Sürücü Yorgunluk Tespit Sistemi** üzerinde çalışıyorum.
-- 🌱 **Derin Öğrenme** ve **Yapay Zeka** konularında kendimi geliştiriyorum.
-- ⚡ Eğlenceli gerçek: Python Turtle ile animasyonlar yapmayı seviyorum.
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=39D353&center=true&vCenter=true&width=435&lines=Python+Geli%C5%9Ftirici;Veri+Analisti;OpenCV+ve+G%C3%B6r%C3%BCnt%C3%BC+%C4%B0%C5%9Fleme;Web+Otomasyon+Uzman%C4%B1;S%C3%BCrekli+%C3%96%C4%9Frenen+Bir+Yaz%C4%B1l%C4%B1mc%C4%B1" alt="Typing SVG" />
 
 ---
 
-### 🛠️ Teknolojiler & Araçlar
+### 📩 İletişim Bilgilerim
+[![Gmail](https://img.shields.io/badge/Email-kaya150047%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kaya150047@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profilim-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](#)
+[![GitHub](https://img.shields.io/badge/GitHub-Profilim-181717?style=for-the-badge&logo=github&logoColor=white)](#)
+
+</div>
+
+---
+
+### 🛠️ Teknolojiler & Yetenekler
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/OpenCV-5C2D91?style=for-the-badge&logo=opencv&logoColor=white" />
@@ -28,18 +27,25 @@ Python ve Veri Analizi konularında projeler geliştiriyorum. Özellikle **OpenC
 
 ---
 
-### 📊 GitHub İstatistikleri & Aktiflik
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=GITHUB_KULLANICI_ADIN&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GITHUB_KULLANICI_ADIN&layout=compact&theme=tokyonight" />
-</p>
+### 📊 GitHub İstatistiklerim (Aktiflik ve Başarılar)
+<div align="center">
+  
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=KULLANICI_ADIN&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" />
+  
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KULLANICI_ADIN&layout=compact&theme=tokyonight" />
 
-### 🔥 Çalışma Yoğunluğu (Streak)
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=GITHUB_KULLANICI_ADIN&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</p>
+  <br><br>
+
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=KULLANICI_ADIN&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+
+</div>
 
 ---
+
+### 🔥 Haftalık Kodlama Aktivitesi (Yoğun Yeşil Görünüm)
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=KULLANICI_ADIN&theme=github-compact&bg_color=0d1117&hide_border=true&color=39d353" width="100%" />
+</p>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/mayhemantt/mayhemantt/master/assets/green_line.gif" width="100%">
