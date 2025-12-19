@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yazılım Geliştirici Portfolyosu</title>
+    <title>Yazılım Geliştirici Profili</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
             --bg-color: #0d1117;
@@ -11,13 +12,8 @@
             --border-color: #30363d;
             --text-main: #c9d1d9;
             --text-dim: #8b949e;
+            --accent-green: #39d353;
             --accent-blue: #58a6ff;
-            --github-green: #39d353;
-            /* Aktiflik Renkleri */
-            --l1: #0e4429;
-            --l2: #006d32;
-            --l3: #26a641;
-            --l4: #39d353;
         }
 
         body {
@@ -25,77 +21,92 @@
             background-color: var(--bg-color);
             color: var(--text-main);
             margin: 0;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        /* --- ÜST PROFİL VE İLETİŞİM --- */
-        header {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .profile-container {
+            max-width: 850px;
+            width: 100%;
+        }
+
+        /* --- ÜST İLETİŞİM VE BAŞLIK --- */
+        .header-section {
             text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 30px;
             margin-bottom: 30px;
         }
 
-        .profile-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 3px solid var(--accent-blue);
-            margin-bottom: 15px;
-            object-fit: cover;
+        .typewriter h1 {
+            overflow: hidden;
+            border-right: .15em solid var(--accent-green);
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+            font-size: 1.8rem;
+            color: var(--accent-blue);
         }
 
-        h1 { margin: 0; font-size: 2rem; }
-        .title { color: var(--text-dim); font-size: 1.1rem; margin-bottom: 20px; }
+        /* İletişim Butonları (Üstte) */
+        .contact-badges {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
 
-        /* Yeni Şık İletişim Kutusu */
-        .contact-card {
-            background: var(--card-bg);
-            border: 1px solid var(--github-green);
-            padding: 15px 30px;
-            border-radius: 50px;
+        .badge {
             display: flex;
             align-items: center;
-            gap: 10px;
-            text-decoration: none;
-            color: var(--github-green);
-            font-weight: bold;
-            transition: 0.3s ease;
-            box-shadow: 0 4px 15px rgba(57, 211, 83, 0.1);
-        }
-
-        .contact-card:hover {
-            background: var(--github-green);
-            color: var(--bg-color);
-            box-shadow: 0 4px 20px rgba(57, 211, 83, 0.3);
-        }
-
-        /* --- AKTİFLİK ÇİZELGESİ (GITHUB TARZI) --- */
-        .section-title {
-            font-size: 0.9rem;
-            color: var(--text-dim);
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .activity-card {
+            padding: 8px 16px;
             background: var(--card-bg);
             border: 1px solid var(--border-color);
-            border-radius: 6px;
-            padding: 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: var(--text-main);
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .badge:hover {
+            border-color: var(--accent-green);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(57, 211, 83, 0.1);
+        }
+
+        .badge i { margin-right: 8px; color: var(--accent-green); }
+
+        /* --- STATS KARTLARI (GITHUB STİLİ) --- */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
             margin-bottom: 30px;
         }
 
-        .grid {
+        .stat-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        /* --- AKTİFLİK ÇİZELGESİ (YEŞİLLER ARTIRILDI) --- */
+        .activity-box {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .activity-grid {
             display: grid;
-            grid-template-columns: repeat(25, 1fr); /* Daha geniş bir takvim */
+            grid-template-columns: repeat(28, 1fr);
             gap: 4px;
         }
 
@@ -103,108 +114,108 @@
             width: 100%;
             aspect-ratio: 1/1;
             border-radius: 2px;
-            background: #161b22;
         }
 
-        /* Yoğun yeşiller için sınıflar */
-        .level-1 { background: var(--l1); }
-        .level-2 { background: var(--l2); }
-        .level-3 { background: var(--l3); }
-        .level-4 { background: var(--l4); }
+        /* Yeşil Yoğunluğu Sınıfları */
+        .v0 { background: #161b22; }
+        .v1 { background: #0e4429; }
+        .v2 { background: #006d32; }
+        .v3 { background: #26a641; }
+        .v4 { background: #39d353; }
 
-        /* --- PROJELER --- */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
+        /* Beceri İkonları */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
         }
 
-        .project-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            padding: 20px;
-            border-radius: 6px;
-            transition: 0.2s;
-        }
-
-        .project-card:hover {
-            border-color: var(--text-dim);
-        }
-
-        .project-card h3 {
-            margin-top: 0;
-            color: var(--accent-blue);
-            font-size: 1.1rem;
-        }
-
-        .tag {
-            font-size: 0.75rem;
+        .skill-icon {
+            padding: 5px 12px;
             background: #1f2937;
-            padding: 3px 8px;
-            border-radius: 10px;
-            margin-right: 5px;
+            border-radius: 5px;
+            font-size: 0.85rem;
+            border: 1px solid var(--border-color);
         }
+
+        /* Animasyonlar */
+        @keyframes typing { from { width: 0 } to { width: 100% } }
+        @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: var(--accent-green); } }
 
         @media (max-width: 600px) {
-            .projects-grid { grid-template-columns: 1fr; }
-            .grid { grid-template-columns: repeat(15, 1fr); }
+            .stats-grid { grid-template-columns: 1fr; }
+            .activity-grid { grid-template-columns: repeat(14, 1fr); }
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <header>
-        <img src="https://via.placeholder.com/150" alt="Profil" class="profile-img">
-        <h1>Yazılım Geliştirici</h1>
-        <p class="title">Python | Web Developer | Data Analyst</p>
+<div class="profile-container">
+    
+    <div class="header-section">
+        <div class="typewriter">
+            <h1>Merhaba, Ben Bir Geliştiriciyim! 👋</h1>
+        </div>
+        <p style="color: var(--text-dim); margin-top: 10px;">Python Geliştirici | Veri Analisti | Web Otomasyon Uzmanı</p>
         
-        <a href="mailto:kaya150047@gmail.com" class="contact-card">
-            <span>📩 kaya150047@gmail.com</span>
-        </a>
-    </header>
-
-    <span class="section-title">Son 6 aylık çalışma yoğunluğu</span>
-    <div class="activity-card">
-        <div class="grid" id="heatmap"></div>
-        <div style="margin-top: 10px; font-size: 0.7rem; color: var(--text-dim); text-align: right;">
-            Az <span style="display:inline-block; width:10px; height:10px; background:#161b22; margin:0 2px;"></span>
-            <span style="display:inline-block; width:10px; height:10px; background:var(--l4); margin:0 2px;"></span> Çok
+        <div class="contact-badges">
+            <a href="mailto:kaya150047@gmail.com" class="badge">
+                <i class="fas fa-envelope"></i> kaya150047@gmail.com
+            </a>
+            <a href="#" class="badge">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="#" class="badge">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
         </div>
     </div>
 
-    <span class="section-title">Öne Çıkan Projeler</span>
-    <div class="projects-grid">
-        <div class="project-card">
-            <h3>Drowsiness Detection</h3>
-            <p style="font-size: 0.9rem; color: var(--text-dim);">OpenCV ve Python kullanılarak geliştirilmiş sürücü yorgunluk tespit sistemi.</p>
-            <div>
-                <span class="tag">Python</span>
-                <span class="tag">OpenCV</span>
-            </div>
+    <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Kullandığım Teknolojiler</h3>
+    <div class="skills">
+        <span class="skill-icon"><i class="fab fa-python" style="color:#3776AB"></i> Python</span>
+        <span class="skill-icon"><i class="fas fa-eye" style="color:#5C2D91"></i> OpenCV</span>
+        <span class="skill-icon"><i class="fab fa-html5" style="color:#E34F26"></i> HTML5</span>
+        <span class="skill-icon"><i class="fab fa-css3-alt" style="color:#1572B6"></i> CSS3</span>
+        <span class="skill-icon"><i class="fab fa-js" style="color:#F7DF1E"></i> JavaScript</span>
+        <span class="skill-icon"><i class="fas fa-robot" style="color:#43B02A"></i> Selenium</span>
+    </div>
+
+    <h3 style="font-size: 1.1rem; margin-top: 30px; margin-bottom: 10px;">GitHub İstatistikleri</h3>
+    <div class="stats-grid">
+        <div class="stat-card">
+            <p style="margin:0; color:var(--accent-blue); font-weight:bold;">Top Languages</p>
+            <div style="margin-top:10px; height:10px; background:#3776AB; border-radius:5px; width:85%;"></div>
+            <p style="font-size:0.8rem; margin-top:5px; color:var(--text-dim);">Python %85, Diğer %15</p>
         </div>
-        <div class="project-card">
-            <h3>Web Automation Tools</h3>
-            <p style="font-size: 0.9rem; color: var(--text-dim);">Selenium tabanlı veri çekme ve otomasyon botları.</p>
-            <div>
-                <span class="tag">Selenium</span>
-                <span class="tag">Python</span>
-            </div>
+        <div class="stat-card" style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
+            <span style="font-size:1.5rem; color:var(--accent-green); font-weight:bold;">500+</span>
+            <span style="font-size:0.8rem; color:var(--text-dim);">Toplam Katkı (Yıllık)</span>
         </div>
     </div>
+
+    <h3 style="font-size: 1.1rem; margin-top: 20px; margin-bottom: 5px;">Çalışma Yoğunluğu</h3>
+    <div class="activity-box">
+        <div class="activity-grid" id="contributions"></div>
+        <p style="font-size:0.7rem; color:var(--text-dim); text-align:right; margin-top:10px;">
+            Daha az <span class="sq" style="display:inline-block; width:10px; background:#161b22"></span> 
+            <span class="sq" style="display:inline-block; width:10px; background:#39d353"></span> Daha çok
+        </p>
+    </div>
+
 </div>
 
 <script>
-    const heatmap = document.getElementById('heatmap');
-    // Yeşilleri artırmak için olasılıkları l3 ve l4 ağırlıklı yaptık
-    const levels = ['level-0', 'level-1', 'level-2', 'level-3', 'level-3', 'level-4', 'level-4', 'level-4'];
+    const container = document.getElementById('contributions');
+    // Yeşili artırmak için olasılıkları v3 ve v4 (en koyu yeşiller) ağırlıklı yaptık
+    const levels = ['v1', 'v2', 'v3', 'v3', 'v3', 'v4', 'v4', 'v4', 'v4', 'v4', 'v0'];
 
-    for (let i = 0; i < 175; i++) {
-        const square = document.createElement('div');
-        // Rastgele seçim yaparken l0 (boş) gelme şansını azalttık
+    for (let i = 0; i < 224; i++) { // 28 sütun x 8 satır gibi düşün
+        const day = document.createElement('div');
         const randomLevel = levels[Math.floor(Math.random() * levels.length)];
-        square.className = 'sq ' + randomLevel;
-        heatmap.appendChild(square);
+        day.className = 'sq ' + randomLevel;
+        container.appendChild(day);
     }
 </script>
 
